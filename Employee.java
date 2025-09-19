@@ -43,7 +43,10 @@ public class Employee{
      */
     private double calculatePay(){
         // Question 13
-        totalSalary = HourlyWage * unpaidHours;
+        double totalSalary;
+        double afterTaxes;
+        
+        totalSalary = hourlyWage * unpaidHours;
         afterTaxes = totalSalary * 0.3;
         return afterTaxes;
     }
