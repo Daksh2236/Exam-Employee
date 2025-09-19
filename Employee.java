@@ -56,7 +56,7 @@ public class Employee{
      */
     public void paySalary(){
         // Question 14
-        system.out.println("John Deere has received a wire transfer of " + calculatePay + " CAD");
+        System.out.println("John Deere has received a wire transfer of " + calculatePay() + " CAD");
         unpaidHours = 0;
     }
     
