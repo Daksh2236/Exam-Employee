@@ -34,8 +34,9 @@ public class Employee{
         // Question 12
         if (age >= 16){
             System.out.println("can drive");
-        }else
-            System.out.println("must wait " +  (16 -  age) + " years(s)");
+        }else      
+            System.out.println("must wait " +  (16 - age) + " years(s)"); 
+        return (true);
     }
 
     /*
