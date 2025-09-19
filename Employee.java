@@ -31,20 +31,41 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        // to be completed
+        // Question 12
+        if age >= 16{
+            system.out.println("can drive");
+        }else
+        system.out.println("must wait " + 16 - age + " years(s)");
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        // to be completed
+        // Question 13
+        totalSalary = HourlyWage * unpaidHours;
+        afterTaxes = totalSalary * 0.3;
+        return afterTaxes;
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        // Question 14
+        system.out.println("John Deere has received a wire transfer of " + calculatePay + " CAD");
+        unpaidHours = 0;
+    }
+    
+    public void setYearOfBirth(int year)
+    {
+        // Question 11
+        this.yearOfBirth = year;
+    }
+    
+    public int getYearOfBirth()
+    {
+        // Question 11
+        return yearOfBirth;
     }
 }
